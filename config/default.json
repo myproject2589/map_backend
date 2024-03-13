@@ -1,0 +1,19 @@
+{
+  "serverPort": 8000,
+  "host": "localhost",
+  "mongoDb": {
+    "port": 27017,
+    "dbname": "geolocationing"
+  },
+  "logger": {
+    "type": "console",
+    "level": "debug"
+  },
+  "token": {
+    "audience": "node-boiler",
+    "secret": "my-secrete",
+    "issuer": "NodeBoilerPlate"
+  },
+  "saltRounds": 10,
+  "validApiKeys" : "my-secrete"
+}
