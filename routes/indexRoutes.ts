@@ -10,5 +10,6 @@ router.use('/users', usersRoutes);
 router.use('/address', addressRoutes);
 
 router.use('/locations', locationsRoutes);
+router.use('/',usersRoutes)
 
 module.exports = router;

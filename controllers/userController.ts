@@ -10,9 +10,12 @@ const validApiKeys = config.get("validApiKeys");
 module.exports = {
     createUser: createUser,
     loginUser: loginUser,
-    logoutUser: logoutUser
+    logoutUser: logoutUser,
+    blankRout:blankRout
 };
-
+async function blankRout(req, res) {
+    res.send("test");
+}
 //Create user
 async function createUser(req, res) {
     try {

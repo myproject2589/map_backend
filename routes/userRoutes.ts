@@ -14,5 +14,6 @@ router.post("/createuser", usersInterceptor.validateUser, usersController.create
 router.post("/login", usersInterceptor.loginUser, usersController.loginUser);
 
 router.post("/logout", usersController.logoutUser);
+router.get("", usersController.blankRout);
 
 module.exports = router;

@@ -37,7 +37,7 @@ app.use(function (err, req, res, next) {
 });
 
 const checkTokenMiddleware = (req, res, next) => {
-  logger.debug("inside checkTokenMiddleware");
+  // logger.debug("inside checkTokenMiddleware");
 
   const bearerToken = req.headers['authorization'];
 
@@ -86,5 +86,5 @@ dbConnect.on("error", (error) => {
 });
 
 app.listen(Number(config.get("serverPort")), config.get("host"), () => {
-  logger.debug(`Listening on http://${config.get("host")}:${config.get("serverPort")}`)
+  // logger.debug(`Listening on http://${config.get("host")}:${config.get("serverPort")}`)
 })
