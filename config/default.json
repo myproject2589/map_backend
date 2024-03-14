@@ -1,5 +1,5 @@
 {
-  "serverPort": 8000,
+  "serverPort": 8001,
   "host": "localhost",
   "mongoDb": {
     "port": 27017,
