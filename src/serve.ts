@@ -85,6 +85,10 @@ dbConnect.on("error", (error) => {
   logger.error(error);
 });
 
-app.listen(Number(config.get("serverPort")), config.get("host"), () => {
-  // logger.debug(`Listening on http://${config.get("host")}:${config.get("serverPort")}`)
-})
+// app.listen(Number(config.get("serverPort")), config.get("host"), () => {
+//   // logger.debug(`Listening on http://${config.get("host")}:${config.get("serverPort")}`)
+// })
+app.listen(10000,  ()=> {
+  logger.debug("Server File Initiated");
+  console.log("listening on 10000");
+});
