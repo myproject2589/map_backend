@@ -11,10 +11,10 @@ const addressSchema = new Schema(
         address2: {
             type: String,
         },
-        area: {
-            type: String,
-            required: true,
-        },
+        // area: {
+        //     type: String,
+        //     required: true,
+        // },
         city: {
             type: String,
             required: true,

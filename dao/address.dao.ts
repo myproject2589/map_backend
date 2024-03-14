@@ -9,6 +9,7 @@ module.exports = {
 
 //insert record
 async function addNewAddress(address) {
+  console.log("address",address);
   let addressData = new addressModel(address);
   let newAddress = await addressData.save().catch((err) => {
     return err;

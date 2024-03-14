@@ -15,7 +15,7 @@ module.exports = {
 //API to add new Address
 async function addNewAddress(req, res) {
     try {
-        logger.debug("inside addNewAddress", JSON.stringify(req.body));
+        //logger.debug("inside addNewAddress", JSON.stringify(req.body));
         let addressDetails = req.body;
         let newaddressDetails = await addressDao.addNewAddress(addressDetails);
 

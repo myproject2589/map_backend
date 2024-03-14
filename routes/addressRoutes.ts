@@ -13,7 +13,7 @@ router.get("/getAllAddress", addressController.getAllAddress);
 
 router.post("/getAddressById", addressController.getAddressById);
 
-router.delete("/deleteAddress", addressController.deleteAddress);
+router.post("/deleteAddress", addressController.deleteAddress);
 
 router.put("/updateAddress", addressController.updateAddress);
 
