@@ -42,7 +42,7 @@ async function getAllAddress(req, res) {
             logger.debug(`Address Fetched successfully: ${allAddress.length}`);
             res.status(200).json(allAddress);
         } else {
-            throw new Error("No addresses found.");
+            res.status(200).json([]);
         }
     } catch (error) {
         logger.error("Failed to fetch Address:", error);
